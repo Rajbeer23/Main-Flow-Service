@@ -1,0 +1,44 @@
+# python data types
+#list
+my_list = [1,12,3,4]
+
+#adding an element to the list
+my_list.append(12)
+
+#removing an element from the list
+my_list.remove(3)
+
+#modify an element in the list
+my_list[0] = 10 
+
+print("Update list:", my_list)
+
+
+
+# create dictionary
+my_dictionary= {'name': 'Rajbeer' , 'age': 23, 'city': 'Dehradun'}
+
+#adding
+my_dictionary['gneder'] = 'Male' 
+
+# removing
+del my_dictionary['age']
+
+# modifying
+my_dictionary['city'] = 'Delhi'
+
+print("Updated dictionaryL:" ,my_dictionary)
+
+
+# creating a set
+my_set = {1, 2, 4, 5, 6}
+
+# adding
+my_set.add(12)
+
+# removing
+my_set.remove(2)
+
+# modifying (discard)
+my_set.discard(4)
+print("New Set: ",my_set)
