@@ -1,0 +1,25 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+file_path = 'housingmaker.csv'  
+df = pd.read_csv(file_path)
+
+plt.figure(figsize=(10, 6))
+plt.bar(df['year'], df['income'], color='blue', alpha=0.7, label='Income')
+plt.xlabel('Year')
+plt.ylabel('Income ($)')
+plt.title('Income Over Years')
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.show()
+
+
+# Step 3: Create Line Chart
+plt.figure(figsize=(10, 6))
+plt.plot(df['year'], df['expenditure'], marker='o', color='green', linestyle='-', linewidth=2, label='Expenditure')
+plt.xlabel('Year')
+plt.ylabel('Expenditure ($)')
+plt.title('Expenditure Over Years')
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.tight_layout()
